@@ -1,0 +1,134 @@
+html {
+  line-height: 1.5;
+  /**
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', YuGothic, 'メイリオ', Meiryo, sans-serif;
+  /**/
+  font-family: 'Hiragino Kaku Gothic ProN', '\30D2\30E9\30AE\30CE\89D2\30B4  ProN W3', \6E38\30B4\30B7\30C3\30AF\4F53, 'Yu Gothic', YuGothic, \30E1\30A4\30EA\30AA, Meiryo, sans-serif;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+table,
+pre {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+li ul,
+li ol,
+dd dl {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.3333;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  line-height: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  line-height: 1.5rem;
+}
+
+p,
+li,
+dt,
+dd,
+th,
+td,
+pre {
+  -ms-line-break: strict;
+  line-break: strict;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+a {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+}
+
+@supports (text-decoration: underline) and (text-decoration-style: dotted) {
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+}
+
+/**
+ * font-styleプロパティの初期値ではメイリオフォントで斜体にならないため、上書き
+ * http://kotori-blog.com/css/meiryo_italic/
+ */
+i,
+cite,
+var,
+address,
+dfn {
+  font-style: oblique;
+}
+
+/**
+ * em要素は「強勢」としてマークアップする
+ */
+em {
+  font-style: normal;
+}
+
+em:before {
+  content: '\300C';
+}
+
+em:after {
+  content: '\300D';
+}
+
+bdi,
+output {
+  unicode-bidi: -moz-isolate;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+}
+
+datalist {
+  display: none;
+}
